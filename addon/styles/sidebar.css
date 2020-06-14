@@ -31,7 +31,20 @@
   background-color: var(--color-gray-100);
 }
 
+.post-content-image > img {
+  max-width: var(--container-width);
+}
+
+.post-content-body > * > img {
+  max-width: var(--container-width);
+}
+
 @media (max-width: 768px) {
+
+  :root{
+    --container-width: 90vw;
+  }
+
   .sidebar-container {
     display: block;
     padding: var(--spacing-4) var(--grid-margin);
